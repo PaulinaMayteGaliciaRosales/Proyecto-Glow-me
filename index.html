@@ -28,85 +28,179 @@
  <header class="sitio-header"> 
     <!--Este container es unicamente para el logo-->
     <div class="container header-inner"> 
-        <a href="#inicio" class="logo"> 
+        <a href="#Inicio" class="logo"> 
           <span class="logo-icono">🪩</span>  
           GLOW ME
-        </a>
+      </a>
 
-     <nav class="main-nav"> 
-        <ul> 
+    <nav class="main-nav"> 
+        <ul>
             <li>
-              <a href="#Inicio">Inicio</a>  
+            <a href="#Inico">Inicio</a>
             </li>
+
             <li>
-              <a href="#Productos">Productos</a>  
+            <a href="#Servicios">Servicios</a>
             </li>
-            </li>
+
             <li>
-              <a href="#Nosotros">About</a>  
+            <a href="#Nosotros">About</a>
             </li>
-             <li>
-              <a href="#Contacto">Contacto</a>  
+
+            <li>
+            <a href="#Contacto">Contacto</a>
             </li>
 
         </ul>
-     </nav> 
 
-     <button id="menu-toggle" class="menu-toggle"
-      aria-label="Abrir menú" aria-expanded="false" 
-      aria-controls="mobile-menu">☰</button>
-     </div>
+    </nav> 
 
-     <nav id="mobile-menu" class="mobile-nav">
+    <!--Boton Menu movil--> 
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+<!--Navegación movil-->
+    <nav id="mobile-menu" class="mobile-nav">
       <ul>
         <li>
-              <a href="#Inicio">Inicio</a>  
-            </li>
+         <a href="#Inico">Inicio</a>
+         </li>
+
             <li>
-              <a href="#Servicios">Productos</a>  
+            <a href="#Servicios">Servicios</a>
             </li>
-            </li>
+
             <li>
-              <a href="#Nosotros">About</a>  
+            <a href="#Nosotros">About</a>
             </li>
-             <li>
-              <a href="#Contacto">Contacto</a>  
+
+            <li>
+            <a href="#Contacto">Contacto</a>
             </li>
       </ul>
      
     </nav>
+
     
     </header>
+    <!--Inicio Main (principal) del desarrollo web-->
     <main> 
-        <!--SECCIÓN CARRUSEL-->      
+      <!--SECCIÓN CARRUSEL INTERACTIVO DE 3 IMAGENES-->
+    <section id="inicio" class="hero-section">
+        <div class="carousel-track" id="carouseltrackebc">
 
-        <section id="carrusel" class="carousel-section container"> 
-          <h2>Para que tu marca destaque en el mundo digital</h2>
-          <div class="carousel-track" id="carouseltrackebc"> 
-            <!--Primera imagen hero-->
-            <div class="carousel-slide>"> 
-              <img src="img/hero1.png" alt="imagen glow me hero"> 
+            <!--Primera imagen de hero-->
+            <div class="carousel-slide">
+                <img src="img/hero1.png" alt="imagen flores hero1">
+                <div class="slide-overlay">
+                     <span class="badge">Blossom Boutique</span>
+                    <h1>Flores <span class="highlight-yellow">que hablan por ti.</span></h1>
+                    <p>Detalles únicos que transforman momentos especiales en recuerdos inolvidables.</p>
+                    <a href="#servicios" class="btn-hero">Descubrir arreglos</a>
+                </div>
             </div>
 
-            <!--Segunda imagen hero-->
-            <div class="carousel-slide>"> 
-              <img src="img/hero2.png" alt="imagen glow me1 hero"> 
+            <!--Segunda  imagen de hero-->
+            <div class="carousel-slide">
+                <img src="img/hero2.png" alt="imagen flores hero2">
+                <div class="slide-overlay">
+                    <span class="badge">New Arrivals</span>
+                    <h1>Nuevas flores, <span class="highlight-yellow">nuevos momentos</span></h1>
+                    <p>Descubre nuestras nuevas colecciones florales, creadas para sorprender y enamorar.</p>
+                    <a href="#servicios" class="btn-hero">Ver novedades</a>
+                </div>
             </div>
 
-            <!--Tercera imagen hero-->
-            <div class="carousel-slide>"> 
-              <img src="img/hero3.png" alt="imagen glow me2 hero"> 
+             <!--Tercera imagen de hero-->
+            <div class="carousel-slide">
+                <img src="img/hero3.png" alt="imagen flores hero3">
+                <div class="slide-overlay">
+                    <span class="badge">Made with Love</span>
+                    <h1>Regala momentos <span class="highlight-yellow">que florecen</span></h1>
+                    <p>Encuentra el arreglo perfecto para celebrar, agradecer o hacer sonreír a alguien especial.</p>
+                    <a href="#servicios" class="btn-hero">Encuentra tu favorito</a>
+                </div>
             </div>
 
-          </div>
+        </div>
+
+          <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
          </section>
 
+         <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Servicios de digital Marketing para empresas</h3>
+                </div>
 
-<p>This is a paragraph.</p>
+              <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Diseño de Espacios</h4>
+                        <p>Asesoramiento integral para adaptar cualquier sala o habitación en un espacio cinematográfico cómodo y funcional.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Acústica Profesional</h4>
+                        <p>Tratamiento de audio e instalación de altavoces envolventes para una inmersión acústica completa.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Domótica e IA</h4>
+                        <p>Controla la iluminación, persianas, proyector y sonido desde tu smartphone o con comandos de voz.</p>
+                    </div>
+
+                 </div>
+             </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/servicio2.png" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el marketing digital.</h3>
+                    <p>En <strong>GLOWME</strong>, Personalizamos tu marca y redes sociales para que estas sean llamativas ante la gente, las persoanlizamos a corde a tus gustos y dependiendo en como te quieras dar a conocer en las redes.</p>
+                    <p>Brindamos consultoría y soluciones ante la nueva era digital, no te quedes atrás y comienza a vender.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-
+    <!--FOOTER-->
     <footer>
   <div class="footer-social">
     <div class="container social-icons">
